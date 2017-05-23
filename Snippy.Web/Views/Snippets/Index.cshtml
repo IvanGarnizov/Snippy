@@ -1,0 +1,9 @@
+﻿@using Snippy.Web.Models.ViewModels
+@using PagedList
+@using PagedList.Mvc
+@model PagedList<SnippetViewModel>
+
+<h1>All snippets</h1>
+
+@Html.DisplayFor(m => m)
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))

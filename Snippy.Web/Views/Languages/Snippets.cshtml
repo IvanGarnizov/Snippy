@@ -1,0 +1,6 @@
+﻿@using Snippy.Web.Models.ViewModels
+@model LanguageSnippetsViewModel
+
+<h1>All snippets for language <span class="language">@Model.Name</span></h1>
+
+@Html.DisplayFor(m => m.Snippets)

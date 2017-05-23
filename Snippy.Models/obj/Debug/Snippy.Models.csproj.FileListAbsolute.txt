@@ -1,0 +1,14 @@
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\bin\Debug\Snippy.Models.dll.config
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\bin\Debug\Snippy.Models.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\bin\Debug\Snippy.Models.pdb
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\obj\Debug\Snippy.Models.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\obj\Debug\Snippy.Models.dll
+C:\Users\ASUS\Documents\Visual Studio 2017\Projects\MVC\Snippy\Snippy.Models\obj\Debug\Snippy.Models.pdb

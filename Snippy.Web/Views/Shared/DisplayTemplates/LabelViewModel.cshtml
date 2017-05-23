@@ -1,0 +1,4 @@
+﻿@using  Snippy.Web.Models.ViewModels
+@model LabelViewModel
+
+<div class="label">@Html.ActionLink(Model.Text, "Snippets", "Labels", new { id = Model.Id }, null)<span class="snippets-count">@Model.SnippetsCount</span></div>

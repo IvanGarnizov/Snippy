@@ -1,0 +1,9 @@
+﻿@using Snippy.Web.Models.ViewModels
+@model SnippetViewModel
+
+<h3>@Html.ActionLink(Model.Title, "Details", "Snippets", new { id = Model.Id }, null)</h3>
+
+@if (Model.Labels.Any())
+{
+    @Html.DisplayFor(m => m.Labels)
+}

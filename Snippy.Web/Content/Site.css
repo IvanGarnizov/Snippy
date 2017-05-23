@@ -1,0 +1,137 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.snippet-label {
+    display: inline-block;
+    margin-right: 5px;
+    background-color: rgb(51, 122, 183);
+    color: white;
+    padding: 4px 5px 4px 5px;
+    border-radius: 4px;
+}
+
+.comment {
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgb(239, 239, 239);
+    border-radius: 2px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.comment div:first-of-type {
+    margin-bottom: 20px;
+}
+
+#author-name {
+    font-weight: bold;
+}
+
+.best-labels {
+    border: 2px solid rgb(51, 122, 183);
+    border-radius: 3px;
+}
+
+#logo {
+    padding: 15px;
+    background-color: rgb(51, 122, 183);
+    color: white;
+    font-size: 20px
+}
+
+.snippets-count {
+    margin-left: 30px;
+    background-color: rgb(120, 120, 120);
+    border-radius: 20px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+}
+
+.label {
+    padding: 20px;
+    display: block;
+    font-size: 15px;
+}
+
+.language {
+    background-color: rgb(92, 184, 92);
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+}
+
+.language a {
+    color: white;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.code {
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgb(239, 239, 239);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.language a:hover, .snippet-label a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    padding: 30px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#snippets-title {
+    display: inline-block;
+}
+
+#snippets-label {
+    font-size: 30px;
+    background-color: rgb(51, 122, 183);
+    color: white;
+    padding: 4px 5px 4px 5px;
+    border-radius: 4px;
+}
+
+.btn {
+    margin-bottom: 20px;
+}
+
+#delete-comment-button {
+    float: right;
+}
+
+#search-box input:first-of-type {
+    display: inline;
+    width: 70%;
+    margin-top: 8px;
+}
+
+#search-box input:nth-last-of-type(1) {
+    margin-bottom: 0;
+}

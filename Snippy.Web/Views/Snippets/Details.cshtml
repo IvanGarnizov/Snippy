@@ -1,0 +1,61 @@
+﻿@using Snippy.Web.Models.ViewModels
+@model SnippetDetailsViewModel
+
+<span class="language">@Html.ActionLink(Model.Language, "Snippets", "Languages", new { id = Model.LanguageId }, null)</span>
+<div class="title">@Model.Title</div>
+
+@if (this.User.Identity.IsAuthenticated && this.ViewBag.UserId == Model.AuthorId)
+{
+    @Html.ActionLink("Edit", "SendEdit", "Snippets", new { id = Model.Id, title = Model.Title }, new { @class = "btn btn-warning" })
+}
+<br />
+by <span class="glyphicon glyphicon-user"></span>
+<span id="author-name">@Model.AuthorName</span> on @Model.CreationTime.ToString("dd.MM.yyyy")
+
+@if (Model.Labels.Any())
+{
+    <div>Labels: @Html.DisplayFor(m => m.Labels)</div>
+}
+
+<div>@Model.Description</div>
+<div class="code">@Model.Code</div>
+<div class="title">Comments:</div>
+
+@if (this.User.Identity.IsAuthenticated)
+{
+    using (Ajax.BeginForm("Add", "Comments", new { id = Model.Id }, new AjaxOptions()
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.InsertBefore,
+        UpdateTargetId = "snippet-comments",
+        OnSuccess = "removeMessage",
+        OnComplete = "cleanTextarea"
+    }))
+    {
+        @Html.TextArea("content", new { placeholder = "Write a public comment...", @class = "form-control", rows = 5 })
+        <input type="submit" class="btn btn-primary" value="Add comment" />
+    }
+}
+
+<div id="snippet-comments">
+    @if (Model.Comments.Any())
+    {
+        @Html.DisplayFor(m => m.Comments)
+    }
+    else
+    {
+        <div id="no-comment-message">There are no comments right now</div>
+    }
+</div>
+
+@section Scripts {
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script>
+        function removeMessage() {
+            $('#no-comment-message').remove();
+        };
+        function cleanTextarea() {
+            $('textarea').val('');
+        }
+    </script>
+}
