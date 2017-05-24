@@ -16,6 +16,7 @@
         {
         }
 
+        [ValidateAntiForgeryToken]
         [Authorize]
         public ActionResult Add(int id, string content)
         {

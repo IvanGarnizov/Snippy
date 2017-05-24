@@ -32,6 +32,7 @@ by <span class="glyphicon glyphicon-user"></span>
         OnComplete = "cleanTextarea"
     }))
     {
+        @Html.AntiForgeryToken()
         @Html.TextArea("content", new { placeholder = "Write a public comment...", @class = "form-control", rows = 5 })
         <input type="submit" class="btn btn-primary" value="Add comment" />
     }
